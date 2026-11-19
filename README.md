@@ -52,43 +52,18 @@ $405 K CPM). I matched the layout but kept the metrics mutually consistent.
 
 ## Insights in the data (full year 2023)
 
-- **Growth:** spend $3.87 M (+31 % YoY), conversions 124 K (+29 %), impressions 170 M (+19 %). Cost per
+- Growth: spend $3.87 M (+31 % YoY), conversions 124 K (+29 %), impressions 170 M (+19 %). Cost per
   conversion crept up slightly ($36.9 → $38.0), so the growth is paid for rather than coming from efficiency.
-- **Budget vs. outcome mismatch:** Paid Search takes 70 % of spend and drives 61 % of conversions at $35 CPA.
+- Budget vs. outcome mismatch: Paid Search takes 70 % of spend and drives 61 % of conversions at $35 CPA.
   Programmatic delivers 41 % of impressions but only 3 % of conversions ($151 CPA) — it's an awareness channel
   and should be judged on reach/video views, not CPA.
-- **Best campaigns:** Retargeting ($19 CPA) and Brand Search ($19 CPA, 8.6 % CTR). **Worst:** Competitor
+- Best campaigns: Retargeting ($19 CPA) and Brand Search ($19 CPA, 8.6 % CTR). **Worst:** Competitor
   Conquesting ($196 CPA) — first candidate to cut or rework.
-- **Creative fatigue:** StackAdapt CTR slid from ~0.39 % in June to ~0.27 % in Aug–Sep and recovered to 0.39 % after the
+- Creative fatigue: StackAdapt CTR slid from ~0.39 % in June to ~0.27 % in Aug–Sep and recovered to 0.39 % after the
   October refresh → set a creative-rotation alert.
-- **Tracking incident:** Facebook conversions fell from ~40/day to ~4/day on 12–18 Sep while spend stayed flat —
+- Tracking incident: Facebook conversions fell from ~40/day to ~4/day on 12–18 Sep while spend stayed flat —
   a measurement issue, not a performance one (visible in the Conversions sparkline / daily drill-down).
-- **Organic compounding:** organic impressions +68 % from Q1 to Q4 2023 with zero media cost.
-- **Seasonality:** Black Friday week produced ~2.4× an average week's conversions. Q1 vs. previous period
+- Organic compounding: organic impressions +68 % from Q1 to Q4 2023 with zero media cost.
+- Seasonality: Black Friday week produced ~2.4× an average week's conversions. Q1 vs. previous period
   looks red everywhere only because it's compared against the Q4 holiday peak — hence the YoY default.
 
-## Video script (≈ 1:45)
-
-**[0:00 – Intro]** "Hi, I'm Homero. This is my recreation of the cross-channel Executive Summary, built as a
-lightweight web dashboard on a synthetic dataset I generated in Python."
-
-**[0:10 – Widgets]** "Across the top, eight KPI cards answer 'how are we doing?' — spend and efficiency on the
-first row, reach and outcomes on the second — each with the change versus last year and a daily sparkline.
-On the right, three tables drill from channel to data source to campaign, shading impressions and CTR so
-outliers jump out. The chart shows the monthly trend by channel; the shaded band is the selected period, and
-I can drill down to weekly or daily, or switch the metric to conversions or spend."
-
-**[0:40 – Day-to-day use]** "A marketer opens this every morning: check the KPI deltas, and if something moves,
-click into the table — clicking a row filters the whole page — to find which platform or campaign caused it.
-Weekly, they switch the date range to review pacing and decide where to shift budget."
-
-**[1:00 – Insights]** "A few things stand out. Paid Search takes 70% of spend but produces 61% of conversions;
-Programmatic drives 41% of impressions but only 3% of conversions, so it should be judged on reach, not CPA.
-Retargeting and Brand Search convert at about $19; Competitor Conquesting costs $196 — that's the first budget
-to move. StackAdapt's CTR fell about 30% in Q3 — classic creative fatigue — and recovered after a refresh. And
-in mid-September Facebook conversions dropped 90% while spend stayed flat: that's a broken pixel, not bad
-performance."
-
-**[1:30 – Data generation]** "For the data, I modelled each platform with realistic benchmark CTRs and CPMs, gave
-every campaign its own flight dates and performance profile, added seasonality, weekday effects and binomial
-noise, and planted those stories on purpose so the dashboard has something real to find. Thanks for watching!"
